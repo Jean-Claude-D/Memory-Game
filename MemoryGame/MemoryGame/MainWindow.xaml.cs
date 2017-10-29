@@ -22,7 +22,7 @@ namespace MemoryGame
     public partial class MainWindow : Window
     {
         string[] primary = new string[36];
-       // string[] secondary;
+
         Image[] imgs;
 
         GenerateArray instantiate = new GenerateArray();
@@ -30,8 +30,8 @@ namespace MemoryGame
 
         Image click1;
         Image click2;
-        //int numClicks = 0;
-        System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();  //THIS SHIT CREATE A FUCKING TIMER
+
+        System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();  // THIS SHIT CREATE A FUCKING TIMER
 
         public MainWindow()
         {
@@ -54,8 +54,10 @@ namespace MemoryGame
         private void timer_Tick(object sender, EventArgs e)
         {
             timer.Stop();
+            IsHitTestVisible = true;
             ReturnToDefault(click1, click2);
-           // numClicks = 0;
+            click1 = null;
+            click2 = null;
         }
 
         // Check if 2 images are equal to each other by comparing their souce
@@ -85,22 +87,29 @@ namespace MemoryGame
             else if (click1 != null && click2 == null)
             {
                 click2 = clickedImage;
-            }
-            else if (click1 != null && click2 != null)
-            {
-                if (match(click1, click2))
+                if (click1 != click2)
                 {
-
-                    click1.IsEnabled = false;
-                    click2.IsEnabled = false;
-
+                    if (match(click1, click2))
+                    {
+                        click1.IsEnabled = false;
+                        click2.IsEnabled = false;
+                        click1 = null;
+                        click2 = null;
+                    }
+                    else
+                    {
+                        IsHitTestVisible = false;
+                        timer.Start();
+                    }
                 }
                 else
-                    timer.Start();
-                    //ReturnToDefault(click1, click2);
-                    //numClicks = 0;
+                {
+
+                    click2 = null;
+                }
             }
         }
+    
 
         //private void imgHandler(object sender, MouseButtonEventArgs e)
         //{
@@ -110,6 +119,7 @@ namespace MemoryGame
 
         //}
 
+        #region I don't want JC to see this
         private void img1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             img1.Source = (ImageSource)s.ConvertFromString(primary[0].ToString());
@@ -326,5 +336,6 @@ namespace MemoryGame
             img36.Source = (ImageSource)s.ConvertFromString(primary[35].ToString());
             OnClick(img36);
         }
+        #endregion
     }
 }
