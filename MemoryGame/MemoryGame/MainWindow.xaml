@@ -11,42 +11,42 @@
         <Label Content="Level" HorizontalAlignment="Left" VerticalAlignment="Top" Height="39" Width="91" Margin="839,388,0,0" FontWeight="Bold" FontSize="24"/>
         <Label Content="Time" HorizontalAlignment="Left" VerticalAlignment="Top" Height="39" Width="91" Margin="839,81,0,0" FontWeight="Bold" FontSize="24"/>
         <Label Content="Theme" HorizontalAlignment="Left" VerticalAlignment="Top" Height="39" Width="91" Margin="839,156,0,0" FontWeight="Bold" FontSize="24"/>
-        <Image x:Name="img1" Height="100" Width="100" Margin="110,59,956.8,574.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img2" Height="100" Width="100" Margin="210,59,856.8,574.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img3" Height="100" Width="100" Margin="310,59,756.8,574.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img4" Height="100" Width="100" Margin="410,59,656.8,574.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img5" Height="100" Width="100" Margin="510,59,556.8,574.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img6" Height="100" Width="100" Margin="610,59,456.8,574.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img7" Height="100" Width="100" Margin="110,156,956.8,477.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img8" Height="100" Width="100" Margin="210,156,856.8,477.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img9" Height="100" Width="100" Margin="310,156,756.8,477.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img10" Height="100" Width="100" Margin="410,156,656.8,477.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img11" Height="100" Width="100" Margin="510,156,556.8,477.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img12" Height="100" Width="100" Margin="610,156,456.8,477.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img13" Height="100" Width="100" Margin="110,256,956.8,377.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img14" Height="100" Width="100" Margin="210,256,856.8,377.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img15" Height="100" Width="100" Margin="310,256,756.8,377.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img16" Height="100" Width="100" Margin="410,256,656.8,377.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img17" Height="100" Width="100" Margin="510,256,556.8,377.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img18" Height="100" Width="100" Margin="610,256,456.8,377.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img19" Height="100" Width="100" Margin="110,356,956.8,277.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img20" Height="100" Width="100" Margin="210,356,856.8,277.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img21" Height="100" Width="100" Margin="310,356,756.8,277.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img22" Height="100" Width="100" Margin="410,356,656.8,277.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img23" Height="100" Width="100" Margin="510,356,556.8,277.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img24" Height="100" Width="100" Margin="610,356,456.8,277.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img25" Height="100" Width="100" Margin="110,456,956.8,177.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img26" Height="100" Width="100" Margin="210,456,856.8,177.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img27" Height="100" Width="100" Margin="310,456,756.8,177.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img28" Height="100" Width="100" Margin="410,456,656.8,177.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img29" Height="100" Width="100" Margin="510,456,556.8,177.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img30" Height="100" Width="100" Margin="610,456,456.8,177.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img31" Height="100" Width="100" Margin="110,556,956.8,77.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img32" Height="100" Width="100" Margin="210,556,856.8,77.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img33" Height="100" Width="100" Margin="310,556,756.8,77.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img34" Height="100" Width="100" Margin="410,556,656.8,77.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img35" Height="100" Width="100" Margin="510,556,556.8,77.6" Source="Random.jpg" Stretch="Fill"/>
-        <Image x:Name="img36" Height="100" Width="100" Margin="610,556,456.8,77.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img1" Margin="110,59,956.8,574.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img2" Margin="210,59,856.8,574.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img3" Margin="310,59,756.8,574.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img4" Margin="410,59,656.8,574.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img5" Margin="510,59,556.8,574.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img6" Margin="610,59,456.8,574.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img7" Margin="110,156,956.8,477.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img8" Margin="210,156,856.8,477.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img9" Margin="310,156,756.8,477.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img10" Margin="410,156,656.8,477.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img11" Margin="510,156,556.8,477.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img12" Margin="610,156,456.8,477.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img13" Margin="110,256,956.8,377.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img14" Margin="210,256,856.8,377.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img15" Margin="310,256,756.8,377.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img16" Margin="410,256,656.8,377.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img17" Margin="510,256,556.8,377.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img18" Margin="610,256,456.8,377.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img19" Margin="110,356,956.8,277.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img20" Margin="210,356,856.8,277.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img21" Margin="310,356,756.8,277.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img22" Margin="410,356,656.8,277.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img23" Margin="510,356,556.8,277.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img24" Margin="610,356,456.8,277.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img25" Margin="110,456,956.8,177.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img26" Margin="210,456,856.8,177.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img27" Margin="310,456,756.8,177.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img28" Margin="410,456,656.8,177.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img29" Margin="510,456,556.8,177.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img30" Margin="610,456,456.8,177.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img31" Margin="110,556,956.8,77.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img32" Margin="210,556,856.8,77.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img33" Margin="310,556,756.8,77.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img34" Margin="410,556,656.8,77.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img35" Margin="510,556,556.8,77.6" Source="Random.jpg" Stretch="Fill"/>
+        <Image x:Name="img36" Margin="610,556,456.8,77.6" Source="Random.jpg" Stretch="Fill"/>
         <Button x:Name="Easy" Content="Piece of cake" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Margin="940,456,0,0" FontSize="24"/>
         <Button x:Name="Normal" Content="Bring it on" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Margin="940,520,0,0" FontSize="24"/>
         <Button x:Name="Hard" Content="Veteran" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Margin="940,587,0,0" FontSize="24"/>

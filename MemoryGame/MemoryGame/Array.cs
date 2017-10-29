@@ -28,10 +28,10 @@ namespace MemoryGame
             // Convert to arrayList
             //arrayList.AddRange(imageArray);
 
-            return imageArray;
+            return imageArray; // bare in mind, I haven't fix enum after
         }
 
-        public ArrayList randomizeImagePosition(string path)
+        public string[] randomizeImagePosition(string path)
         {
 
             ArrayList imageList = new ArrayList();
@@ -57,7 +57,8 @@ namespace MemoryGame
                 randomize.Add(imageList[randomIndex]);
                 imageList.RemoveAt(randomIndex);
             }
-            return randomize;
+            return randomize.ToArray(typeof(string)) as string[];
+
         }
 
     }

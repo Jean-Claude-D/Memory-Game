@@ -21,68 +21,54 @@ namespace MemoryGame
     /// </summary>
     public partial class MainWindow : Window
     {
-        ArrayList primary = new ArrayList();
+        string[] primary = new string[36];
         string[] secondary;
+        Image[] imgs;
+        int[] imgNumbers;
+        GenerateArray instantiate = new GenerateArray();
+        ImageSourceConverter s = new ImageSourceConverter();
+
+
 
         public MainWindow()
         {
             InitializeComponent();
-        }
 
-        private void Easy_Copy_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
+            imgs = new Image[] {img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
+                                img11, img12, img13, img14, img15, img16, img17, img18, img19,
+                                img20, img21, img22, img23, img24, img25, img26, img27, img28,
+                                img29, img30, img31, img32, img33, img34, img35, img36};
 
+            // generate random array of image
+            primary = instantiate.randomizeImagePosition(@"C:\Users\Crusader2142\Desktop\Assignments\C#\MemoryGame\MemoryGame\MemoryGame");
+            imgNumbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 }; // some of my experiene stupid idea, ignore itoko
+            
         }
 
         private void Shape_Click(object sender, RoutedEventArgs e)
         {
-            GenerateArray instantiate = new GenerateArray();
-            ImageSourceConverter s = new ImageSourceConverter();
 
             //primary = instantiate.randomizeImagePosition(Theme.SHAPE);
 
-            //img1.Source = (ImageSource)s.ConvertFromString(@"C:\Users\Crusader2142\Desktop\Assignments\C#\MemoryGame\MemoryGame\MemoryGame\1.jpg");
-            //img2.Source = (ImageSource)s.ConvertFromString(@"C:\Users\Crusader2142\Desktop\Assignments\C#\MemoryGame\MemoryGame\MemoryGame\2.jpg");
-            //for (int i = 0; i < primary.Count; i++)
-            //{
-            //    Console.WriteLine(primary[i]);
-            //}
+
+
             //Console.WriteLine(primary.Count);
 
 
-            //for (int i = 0; i < primary.Count; i++)
-            //{
-            //    img1.Source = (ImageSource)s.ConvertFromString(primary[i].ToString());
-            //}
-
-            //TRY OUT CODE
-
-            //img3.Source = (ImageSource)s.ConvertFromString(primary[3].ToString());
-            //img4.Source = (ImageSource)s.ConvertFromString(primary[4].ToString());
-            //img5.Source = (ImageSource)s.ConvertFromString(primary[5].ToString());
-
-            //secondary = instantiate.loadImageToArray(@"C:\Users\Crusader2142\Desktop\Assignments\C#\MemoryGame\MemoryGame\MemoryGame");
-
-            primary = instantiate.randomizeImagePosition(@"C:\Users\Crusader2142\Desktop\Assignments\C#\MemoryGame\MemoryGame\MemoryGame");
-
-            //primary.AddRange(secondary);
-            //primary.AddRange(secondary);
-
-            //Console.WriteLine(secondary.Length);
-            //for (int i = 0; i < secondary.Length; i++)
-            //{
-            //    Console.WriteLine(secondary[i]);
-            //}
-
-            Console.WriteLine("======================================");
-            Console.WriteLine(primary.Count);
-            for (int i = 0; i < primary.Count; i++)
-            {
-                Console.WriteLine(primary[i]);
-            }
-
+                //imgs[i].Source = (ImageSource)s.ConvertFromString(primary[i].ToString());
 
 
         }
+
+        private void imgHandler(object sender, MouseButtonEventArgs e)
+        {
+
+            int i = Array.IndexOf(imgs, ((Image)sender));
+
+            ((Image)sender).Source = (ImageSource)s.ConvertFromString(primary[i]); 
+
+        }
+
+
     }
 }
