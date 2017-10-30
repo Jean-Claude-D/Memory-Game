@@ -7,20 +7,17 @@ namespace MemoryGame
             string path;
             switch(theme)
             {
-                case Theme.ANIMAL:
-                    path = @"C:\Users\Crusader2142\Desktop\Assignments\C#\MemoryGame\MemoryGame\MemoryGame";
-                    break;
                 case Theme.SHAPE:
-                    path = @"C:\Users\Crusader2142\Desktop\Assignments\C#\MemoryGame\MemoryGame\MemoryGame";
+                    path = @"..\..\Pictures\Shapes";
                     break;
-                case Theme.PEOPLE:
-                    path = @"C:\Users\Crusader2142\Desktop\Assignments\C#\MemoryGame\MemoryGame\MemoryGame";
+                case Theme.GAME:
+                    path = @"..\..\Pictures\Games";
                     break;
-                case Theme.FLAG:
-                    path = @"C:\Users\Crusader2142\Desktop\Assignments\C#\MemoryGame\MemoryGame\MemoryGame";
+                case Theme.MEME:
+                    path = @"..\..\Pictures\Memes";
                     break;
                 default:
-                    path = @"C:\Users\Crusader2142\Desktop\Assignments\C#\MemoryGame\MemoryGame\MemoryGame";
+                    path = @"..\..\Pictures\Shapes";
                     break;
             }
             return path;

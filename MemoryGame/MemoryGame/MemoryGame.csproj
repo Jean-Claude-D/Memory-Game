@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GameState.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="LevelUtil.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -95,7 +98,26 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Pictures\Games\40k.jpg" />
+    <Resource Include="Pictures\Games\battlefield.jpg" />
+    <Resource Include="Pictures\Games\doom.jpg" />
+    <Resource Include="Pictures\Games\fable.jpg" />
+    <Resource Include="Pictures\Games\farcry.jpg" />
+    <Resource Include="Pictures\Games\finalFantasy.jpg" />
+    <Resource Include="Pictures\Games\halfLife.jpg" />
+    <Resource Include="Pictures\Games\halo.jpg" />
+    <Resource Include="Pictures\Games\mario.jpg" />
+    <Resource Include="Pictures\Games\memoryGame.jpg" />
+    <Resource Include="Pictures\Games\MH.jpg" />
+    <Resource Include="Pictures\Games\minecraft.jpg" />
+    <Resource Include="Pictures\Games\pokemon.jpg" />
+    <Resource Include="Pictures\Games\spaceInvaders.jpg" />
+    <Resource Include="Pictures\Games\starcraft.jpg" />
+    <Resource Include="Pictures\Games\taitanfall.jpg" />
+    <Resource Include="Pictures\Games\triforce.jpg" />
+    <Resource Include="Pictures\Games\witcher.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\Random.jpg" />
   </ItemGroup>
@@ -118,6 +140,26 @@
     <Resource Include="Pictures\Shapes\7.jpg" />
     <Resource Include="Pictures\Shapes\8.jpg" />
     <Resource Include="Pictures\Shapes\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Memes\1ygucz.jpg" />
+    <Resource Include="Pictures\Memes\adapt.jpg" />
+    <Resource Include="Pictures\Memes\backInMyDay.jpg" />
+    <Resource Include="Pictures\Memes\c#.jpg" />
+    <Resource Include="Pictures\Memes\challenge.jpg" />
+    <Resource Include="Pictures\Memes\DB.jpg" />
+    <Resource Include="Pictures\Memes\git.jpg" />
+    <Resource Include="Pictures\Memes\googleFormat.jpg" />
+    <Resource Include="Pictures\Memes\javadoc.jpg" />
+    <Resource Include="Pictures\Memes\Nagi.jpg" />
+    <Resource Include="Pictures\Memes\nullpointer.jpg" />
+    <Resource Include="Pictures\Memes\OneDoesNotSimply.jpg" />
+    <Resource Include="Pictures\Memes\phase3.jpg" />
+    <Resource Include="Pictures\Memes\phase3Prediction.jpg" />
+    <Resource Include="Pictures\Memes\putin.jpg" />
+    <Resource Include="Pictures\Memes\sparta.jpg" />
+    <Resource Include="Pictures\Memes\team.jpg" />
+    <Resource Include="Pictures\Memes\timeManagement.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

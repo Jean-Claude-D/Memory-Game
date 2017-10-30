@@ -23,7 +23,7 @@ namespace MemoryGame
         public string[] loadImageToArray(string path)
         {
             // Load all the files name + their path (ending in .jpg)
-            string[] imageArray = System.IO.Directory.GetFiles(path, "??.jpg");
+            string[] imageArray = System.IO.Directory.GetFiles(path, "*.jpg");
             //ArrayList arrayList = new ArrayList();
             // Convert to arrayList
             //arrayList.AddRange(imageArray);
@@ -31,16 +31,16 @@ namespace MemoryGame
             return imageArray; // bare in mind, I haven't fix enum after
         }
 
-        public string[] randomizeImagePosition(string path)
+        public string[] randomizeImagePosition(Theme theme)
         {
 
             ArrayList imageList = new ArrayList();
 
             // imageList = loadImageToArray(ThemeUtil.getPath(theme));
 
-            imageList.AddRange(loadImageToArray(path));
+            imageList.AddRange(loadImageToArray(ThemeUtil.getPath(theme)));
 
-            imageList.AddRange(loadImageToArray(path));
+            imageList.AddRange(loadImageToArray(ThemeUtil.getPath(theme)));
 
             ArrayList randomize = new ArrayList();
 
